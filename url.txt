@@ -1,0 +1,65 @@
+
+You enter a URL into a web browser
+
+The browser looks up the IP address for the domain name via DNS
+
+
+        DNS(Domain Name System) is a database that maintains the name of the website (URL) and the particular IP address it links to
+        Every single URL on the internet has a unique IP address assigned to it.
+        www.google.com has an IP address of 209.85.227.104
+        Can reach it via either address
+        The main purpose of DNS is human-friendly navigation.
+        how could you possibly remember all the ip addresses of all the different websites you want o visit
+
+        In order to find the DNS record, the browser checks four caches.
+
+        First, it checks the browser cache. If you've visited the domain before
+        Secons, it checks the router cache . if somneone on your network has visited that domain before
+        Third, it checks the ISP cache. if somneone who shares your ISP has visited that domain before
+
+        If it can't find any in the cache it goes out onto the internet to lookup the address
+
+        Directory of all domains and what their corresponding IP address is
+        Like a phone book
+
+Browser initiates a TCP connection with the server.
+
+        TCP/IP three-way handshake
+        the client and the server exchange SYN(synchronize) and ACK(acknowledge) messages to establish a connection.
+        
+        1. SYN          - Client machine sends a SYN packet to the server asking if it is open for new connections.
+        2. SYN/ACK      - If the server can accept new connections, it’ll respond with an ACKnowledgment using a SYN/ACK packet.
+        3. ACK          - The client will receive the SYN/ACK packet and will acknowledge it by sending an ACK packet.
+
+        Then a TCP connection is established for data transmission!
+
+
+The browser sends a HTTP request to the server
+
+        Once the TCP connection is established, it is time to start transferring data! 
+
+        Its established a connection with the server
+
+        Makes a request for a specific page - bbc.co.uk/sport/premierleague
+
+
+The server handles the request and sends back a HTTP response
+        
+        Server could be windows or Linux
+        Many programming languages and frameworks can be used.
+        Asp.net, Ruby etc inMoneycorp we use a tech from Microsoft called Asp.net
+        Might look up some info a database, or call another service (to retrieve tha actual results). Pages are dynamically generated on the server
+        sends all this back to the browser with a response code indicating if it has processed the request or if there was an error or if the browser should instead jump to another url
+
+The browser begins rendering the HTML
+
+        Assuming all went well the browser will then render the returned html
+        Html is a series of tags in a text file. THese are essentially isnstructions telling your browser how to render a page
+        Not a million miles away from a word document, except the instructions are stored with the test
+        A heading like "Premier league results" would be displayed along with the font and text size with which to render this.  There may also be images, photos, graphics or videos displayed inline in the page
+        The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
+        Once the page is loaded, the browser sends further async requests as needed.
+
+
+all of this happens less than a second typically, (bit longer on the Moneycorp network!) if on a decent internet connection
+lots of things we didnt mention like https, 
