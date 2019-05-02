@@ -1,13 +1,16 @@
-
 You enter a URL into a web browser
+
+The subject I'd like to talk to you about today is what happens when you type a url into a browser or click on link as you surf around the web
+This is something that we all take for granted, and with good reason, there is no need to really know what is happening but it's good to know whats happening under the covers
+So I'd like to talk you through the series of steps that happen, to make the content you want to see appear
 
 The browser looks up the IP address for the domain name via DNS
 
-
-        DNS(Domain Name System) is a database that maintains the name of the website (URL) and the particular IP address it links to
+        The first thing that needs to happen is that the browser needs to translate the domain name, like google.com or bbc.co.uk into an IP address
         Every single URL on the internet has a unique IP address assigned to it.
         www.google.com has an IP address of 209.85.227.104
         Can reach it via either address
+        This is achieved using the Domain Name System (DNS). is a database that maintains the name of the website (URL) and the particular IP address it links to
         The main purpose of DNS is human-friendly navigation.
         how could you possibly remember all the ip addresses of all the different websites you want o visit
 
@@ -16,8 +19,7 @@ The browser looks up the IP address for the domain name via DNS
         First, it checks the browser cache. If you've visited the domain before
         Secons, it checks the router cache . if somneone on your network has visited that domain before
         Third, it checks the ISP cache. if somneone who shares your ISP has visited that domain before
-
-        If it can't find any in the cache it goes out onto the internet to lookup the address
+        Lastly, if it can't find any in the cache it goes out onto the internet to lookup the address
 
         Directory of all domains and what their corresponding IP address is
         Like a phone book
@@ -62,4 +64,12 @@ The browser begins rendering the HTML
 
 
 all of this happens less than a second typically, (bit longer on the Moneycorp network!) if on a decent internet connection
-lots of things we didnt mention like https, 
+
+in summary
+
+The browser looks up the IP address for the domain name via DNS
+Browser initiates a TCP connection with the server.
+The browser sends a HTTP request to the server
+The server handles the request and sends back a HTTP response
+The browser begins rendering the HTML
+
