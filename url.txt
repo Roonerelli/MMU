@@ -1,16 +1,22 @@
 You enter a URL into a web browser
 
-The subject I'd like to talk to you about today is what happens when you type a url into a browser or click on link as you surf around the web
-This is something that we all take for granted, and with good reason, there is no need to really know what is happening but it's good to know whats happening under the covers
-So I'd like to talk you through the series of steps that happen, to make the content you want to see appear
+The subject I'd like to talk to you about today is what happens when you type a url 
+into a browser or click on link as you surf around the web
+This is something that we all take for granted, and with good reason, 
+there is no need to really know what is happening but it's good to know whats 
+happening under the covers 
+So I'd like to talk you through the series of steps that happen, 
+to make the content you want to see appear
 
 The browser looks up the IP address for the domain name via DNS
 
-        The first thing that needs to happen is that the browser needs to translate the domain name, like google.com or bbc.co.uk into an IP address
+        The first thing that needs to happen is that the browser needs to translate 
+        the domain name, like google.com or bbc.co.uk into an IP address
         Every single URL on the internet has a unique IP address assigned to it.
         www.google.com has an IP address of 209.85.227.104
         Can reach it via either address
-        This is achieved using the Domain Name System (DNS). is a database that maintains the name of the website (URL) and the particular IP address it links to
+        This is achieved using the Domain Name System (DNS). 
+        This is a database that maintains the name of the website (URL) and the particular IP address it links to
         The main purpose of DNS is human-friendly navigation.
         how could you possibly remember all the ip addresses of all the different websites you want o visit
 
@@ -50,15 +56,22 @@ The server handles the request and sends back a HTTP response
         Server could be windows or Linux
         Many programming languages and frameworks can be used.
         Asp.net, Ruby etc inMoneycorp we use a tech from Microsoft called Asp.net
-        Might look up some info a database, or call another service (to retrieve tha actual results). Pages are dynamically generated on the server
-        sends all this back to the browser with a response code indicating if it has processed the request or if there was an error or if the browser should instead jump to another url
+        Might look up some info a database, or call another service 
+        (to retrieve tha actual results). 
+        Pages are dynamically generated on the server
+        sends all this back to the browser with a response code indicating if it has 
+        processed the request or if there was an error or if the browser 
+        should instead jump to another url
 
 The browser begins rendering the HTML
 
         Assuming all went well the browser will then render the returned html
-        Html is a series of tags in a text file. THese are essentially isnstructions telling your browser how to render a page
+        Html is a series of tags in a text file. THese are essentially isnstructions 
+        telling your browser how to render a page
         Not a million miles away from a word document, except the instructions are stored with the test
-        A heading like "Premier league results" would be displayed along with the font and text size with which to render this.  There may also be images, photos, graphics or videos displayed inline in the page
+        A heading like "Premier league results" would be displayed along with 
+        the font and text size with which to render this.  
+        There may also be images, photos, graphics or videos displayed inline in the page
         The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
         Once the page is loaded, the browser sends further async requests as needed.
 
